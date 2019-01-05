@@ -44,8 +44,8 @@ public class CustomerDAO {
 		
 		t.begin();
 		
-		
-		Query query = em.createNativeQuery("select c.cust_name c.cust_complaint c.cust_complaint from Customer  where c.cust_email =:email");
+		System.out.println(email);
+		Query query = (Query) em.createNativeQuery(" select * from Customer  where cust_email = ?email");
 		query.setParameter("email",email);
 		List<Customer> list = query.getResultList();
 	

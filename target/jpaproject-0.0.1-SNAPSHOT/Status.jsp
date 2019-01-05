@@ -239,7 +239,7 @@ div.error {
                 <div class="row header">
                 <div class="input-field col s12 navbar-collapse" align="center">
                   <h4 style="font-weight: bolder;">Phyton</h4>
-                  <p><center>Airtifical Intelligence</center> </p>
+                  <p><center><c:out value="${complaint}"></c:out></center> </p>
                 </div></div>
               </div></li>
 

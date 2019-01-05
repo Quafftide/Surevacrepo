@@ -27,6 +27,8 @@ public class CustomerComplaintStatus extends HttpServlet {
 		
 		HttpSession session = request.getSession(false);
 		String email = (String) session.getAttribute("Email");
+		
+		System.out.println(email);
 		CustomerDAO dao = new CustomerDAO();
 		complaint = dao.checkComplaintStatus(email);
 		

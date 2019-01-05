@@ -48,8 +48,8 @@ public class CustomerRegisterServlet extends HttpServlet {
 		out.println("<h2>Complaint Registered</h2>");
 
 		out.println("Hi "+cust_name);
-	
-        out.println("<a href=/jpaproject/CustomerComplaintStatus>Please click to check the status</a>");
+
+        out.println("<a href=http://localhost:8081/jpaproject/CustomerComplaintStatus>Please click to check the status</a>");
     out.close();
 		
 	}
